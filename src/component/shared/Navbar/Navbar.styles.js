@@ -15,9 +15,12 @@ const navbarStyles = {
     display: "flex",
     gap: "20px",
     cursor: "pointer",
-  },
-  searchField: {
-    width: "300px",
+    "& > *": {
+      fontSize: "1rem",
+    },
+    "@media (max-width:600px)": {
+      display: "none", // Hide links on mobile
+    },
   },
   iconContainer: {
     display: "flex",
